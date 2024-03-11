@@ -43,14 +43,14 @@ const PersonForm = () => {
             onChange={(e) => handleInputChange(index, e)}
             placeholder="Age"
           />
-          {index > 0 && (
-            <button onClick={() => handleRemoveField(index)}>Remove</button>
-          )}
+
+          <button onClick={() => handleRemoveField(index)}>Remove</button>
         </div>
       ))}
-      <div className="btn_boxs"></div>
-      <button onClick={handleAddField}>Add More</button>
-      <button onClick={handleSubmit}>Submit</button>
+      <div className="btn_boxs">
+        <button onClick={handleAddField}>Add More</button>
+        <button onClick={handleSubmit}>Submit</button>
+      </div>
     </div>
   );
 };

@@ -18,10 +18,16 @@ button {
 button {
   width: 100px;
 }
+.box input {
+  margin: 12px;
+}
 .btn_boxs {
   width: 400px;
   display: flex;
   justify-content: center;
   gap: 12;
-  background-color: beige;
+  margin-top: 12px;
+}
+.btn_boxs button {
+  margin: 0px 4px;
 }
