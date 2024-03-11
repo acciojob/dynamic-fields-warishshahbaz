@@ -6,6 +6,7 @@ const App = () => {
   return (
     <div>
       <PersonForm />
+      <h2>After clicking submit check console for data</h2>
     </div>
   );
 };
