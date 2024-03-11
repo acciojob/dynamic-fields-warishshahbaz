@@ -10,11 +10,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-/* .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-} */
 
 .box input,
 button {
@@ -23,9 +18,10 @@ button {
 button {
   width: 100px;
 }
-.btn_box {
+.btn_boxs {
   width: 400px;
   display: flex;
   justify-content: center;
-  background-color: brown;
+  gap: 12;
+  background-color: beige;
 }

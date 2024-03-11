@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PersonForm = ({}) => {
+const PersonForm = () => {
   const [formData, setFormData] = useState([{ name: "", age: "" }]);
 
   const handleInputChange = (index, e) => {
@@ -9,7 +9,7 @@ const PersonForm = ({}) => {
     updatedFormData[index] = { ...updatedFormData[index], [name]: value };
     setFormData(updatedFormData);
   };
-  console.log(formData, "formData");
+
   const handleAddField = () => {
     setFormData([...formData, { name: "", age: "" }]);
   };
@@ -22,7 +22,7 @@ const PersonForm = ({}) => {
 
   const handleSubmit = () => {
     // You can access all form data in formData array
-    console.log(formData);
+    console.log(formData, "submited");
   };
 
   return (
@@ -48,7 +48,7 @@ const PersonForm = ({}) => {
           )}
         </div>
       ))}
-      <div className="btn_box"></div>
+      <div className="btn_boxs"></div>
       <button onClick={handleAddField}>Add More</button>
       <button onClick={handleSubmit}>Submit</button>
     </div>
