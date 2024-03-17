@@ -48,7 +48,7 @@ const PersonForm = () => {
         </div>
       ))}
       <div className="btn_boxs">
-        <button onClick={handleAddField}>Add More</button>
+        <button onClick={handleAddField}>Add More..</button>
         <button onClick={handleSubmit}>Submit</button>
       </div>
     </div>
